@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
     <head>
         <title>Credit Bank | Home</title>
@@ -21,9 +23,13 @@
                             </p>
                         </div>
                         <div class="col-sm-4">
+                            <a href="<spring:url value="/userRegister" />">
                             <button type="button" class="btn btn-primary">Register New Application</button>
+                            </a>
                             <br/><br/>
+                            <a href="<spring:url value="/user_dashboard" />">
                             <button type="button" class="btn btn-primary">View Applications</button>
+                            </a>
                         </div>
                     </div>
                 </div>
